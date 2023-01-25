@@ -1,0 +1,104 @@
+<mxfile host="65bd71144e">
+    <diagram id="0afjRv207EA1lHhhsC9-" name="Страница 1">
+        <mxGraphModel dx="1008" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="349" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Menu" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="344" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="See list of animals &amp;amp;&amp;nbsp;choice animal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="344" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Exit" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="530" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="434" as="sourcePoint"/>
+                        <mxPoint x="760" y="434" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="434" as="sourcePoint"/>
+                        <mxPoint x="760" y="434" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Add new animal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="210" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="12">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="184" as="sourcePoint"/>
+                        <mxPoint x="760" y="184" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Add new command" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="344" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="14">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="304" as="sourcePoint"/>
+                        <mxPoint x="760" y="304" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="See list of commands" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="530" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Select command" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="530" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="16" target="18">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="304" as="sourcePoint"/>
+                        <mxPoint x="760" y="304" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="600" y="304" as="sourcePoint"/>
+                        <mxPoint x="760" y="304" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="16">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="710" y="430" as="sourcePoint"/>
+                        <mxPoint x="870" y="430" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="Enter animals attributes" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="80" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="710" y="430" as="sourcePoint"/>
+                        <mxPoint x="870" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="38" target="3">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="710" y="340" as="sourcePoint"/>
+                        <mxPoint x="870" y="340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="370" y="115"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="3">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="710" y="340" as="sourcePoint"/>
+                        <mxPoint x="870" y="340" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
