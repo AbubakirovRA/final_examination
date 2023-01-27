@@ -443,7 +443,7 @@ from MansFriends
 join `Match` on `id` = `id_mansfriend`
 join Commands on `id_command` = Commands.`id`;
 
-Объеденим эти таблицы с командами в итоговую таблицу Total:
+Объединим эти таблицы с командами в итоговую таблицу Total:
 
 create table Total as
 select
