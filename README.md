@@ -319,7 +319,7 @@ join BurdenAnimal on BurdenAnimal.`id_mansfriend` = MansFriends.`id`
 join Horse on Horse.`id_burdenanimal` = BurdenAnimal.`id`
 left join Donkey on Donkey.`id_burdenanimal` = BurdenAnimal.`id`
 
-### union
+union
 
 select
 MansFriends.`name`, BurdenAnimal.`MaxBurden`, BurdenAnimal.`MaxDistance`, BurdenAnimal.`MaxSpeed`, Horse.`teethCondition`, Donkey.`obstinacy`
