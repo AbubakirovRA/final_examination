@@ -289,7 +289,7 @@ INSERT INTO `Match` (`id_mansfriend`, `id_command`) VALUES
 
 -- Удаление верблюдов из таблицы Camel:
 
-TRUNCATE TABLE Camel;
+-- TRUNCATE TABLE Camel;
 
 -- Объединение всех вьючных в одном запросе (нет в задании):
 
