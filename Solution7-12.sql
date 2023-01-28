@@ -94,8 +94,7 @@ FOREIGN KEY (`id_mansfriend`) REFERENCES `MansFriends`(`id`) ON DELETE CASCADE,
 FOREIGN KEY (`id_command`) REFERENCES `Commands`(`id`) ON DELETE CASCADE
 );
 
-Task 9. Заполнить низкоуровневые таблицы именами(животных), командами
-которые они выполняют и датами рождения:
+-- Task 9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения:
 
 INSERT INTO MansFriends (`id`, `name`, `birthdate`) VALUES
 ('1001', 'Horse1', '2019-08-08'),
