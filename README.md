@@ -293,7 +293,7 @@ INSERT INTO `Match` (`id_mansfriend`, `id_command`) VALUES
 
 TRUNCATE TABLE Camel;
 
-### Объединение всех вьючных в одном запросе:
+### Объединение всех вьючных в одном запросе (нет в задании):
 
 select
 MansFriends.`name`, BurdenAnimal.`MaxBurden`, BurdenAnimal.`MaxDistance`, BurdenAnimal.`MaxSpeed`, Horse.`teethCondition`, Donkey.`obstinacy`, Camel.`humps`
@@ -428,7 +428,7 @@ left join Hamster on Hamster.`id_pet` = Pet.`id`
 left join Dog on Dog.`id_pet` = Pet.`id`
 join Cat on Cat.`id_pet` = Pet.`id`;
 
-### Объединим данные из таблиц MainsFriends, Match, Commands в одну таблицу сопоставления животных и команд:
+### -- Объединим данные из таблиц MainsFriends, Match, Commands в одну таблицу сопоставления животных и команд (нет в задании):
 
 create table AnimalsCommands as
 select
@@ -437,7 +437,7 @@ from MansFriends
 join `Match` on `id` = `id_mansfriend`
 join Commands on `id_command` = Commands.`id`;
 
-### Объединим эти таблицы с командами в итоговую таблицу Total:
+### Объединим столбцы таблицы AnimalTotal с командами, сопоставленными животным в таблицах Match и Commands в итоговую таблицу Total:
 
 create table Total as
 select

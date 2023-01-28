@@ -1,12 +1,9 @@
-# final_examination
-
-Task 7. В подключенном MySQL репозитории создать базу данных “Друзья
-человека”
+-- Task 7. В подключенном MySQL репозитории создать базу данных “Друзья человека”
 
 CREATE DATABASE `Друзья человека`;
 use `Друзья человека`;
 
-Task 8. Создать таблицы с иерархией из диаграммы в БД
+-- Task 8. Создать таблицы с иерархией из диаграммы в БД
 
 CREATE TABLE `MansFriends` (
 `id` int NOT NULL AUTO_INCREMENT,
@@ -289,14 +286,13 @@ INSERT INTO `Match` (`id_mansfriend`, `id_command`) VALUES
 (1014,1120),
 (1015,1120);
 
-Task 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
-питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
+-- Task 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
 
-Удаление верблюдов из таблицы Camel:
+-- Удаление верблюдов из таблицы Camel:
 
 TRUNCATE TABLE Camel;
 
-Объединение всех вьючных в одном запросе:
+-- Объединение всех вьючных в одном запросе (нет в задании):
 
 select
 MansFriends.`name`, BurdenAnimal.`MaxBurden`, BurdenAnimal.`MaxDistance`, BurdenAnimal.`MaxSpeed`, Horse.`teethCondition`, Donkey.`obstinacy`, Camel.`humps`
@@ -316,7 +312,7 @@ join Donkey on Donkey.`id_burdenanimal` = BurdenAnimal.`id`
 left join Horse on Horse.`id_burdenanimal` = BurdenAnimal.`id`
 left join Camel on Camel.`id_burdenanimal` = BurdenAnimal.`id`;
 
-Создадим таблицу, объединяющую характеристики лошадей и ослов:
+-- Создадим таблицу, объединяющую характеристики лошадей и ослов:
 
 create table DonkeyHorse as
 select
@@ -335,9 +331,7 @@ join BurdenAnimal on BurdenAnimal.`id_mansfriend` = MansFriends.`id`
 join Donkey on Donkey.`id_burdenanimal` = BurdenAnimal.`id`
 left join Horse on Horse.`id_burdenanimal` = BurdenAnimal.`id`;
 
-Task 11. Создать новую таблицу “молодые животные” в которую попадут все
-животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью
-до месяца подсчитать возраст животных в новой таблице:
+-- Task 11. Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице:
 
 CREATE TABLE Yang AS
 select *,
@@ -346,10 +340,9 @@ from MansFriends
 where
 ((TIMESTAMPDIFF (YEAR, birthdate, CURDATE())) < 3 and (TIMESTAMPDIFF (YEAR, birthdate, CURDATE())) > 1);
 
-Task 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на
-прошлую принадлежность к старым таблицам.
+-- Task 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
 
-Объединим все характеристики имеющие отношение ко вьючным и домашним животным в одну таблицу из разных таблиц:
+-- Объединим все характеристики имеющие отношение ко вьючным и домашним животным в одну таблицу из разных таблиц:
 
 create table AnimalTotal as
 select
@@ -434,7 +427,7 @@ left join Hamster on Hamster.`id_pet` = Pet.`id`
 left join Dog on Dog.`id_pet` = Pet.`id`
 join Cat on Cat.`id_pet` = Pet.`id`;
 
-Объединим данные из таблиц MainsFriends, Match, Commands в одну таблицу сопоставления животных и команд:
+-- Объединим данные из таблиц MainsFriends, Match, Commands в одну таблицу сопоставления животных и команд (нет в задании):
 
 create table AnimalsCommands as
 select
@@ -443,7 +436,7 @@ from MansFriends
 join `Match` on `id` = `id_mansfriend`
 join Commands on `id_command` = Commands.`id`;
 
-Объединим эти таблицы с командами в итоговую таблицу Total:
+-- Объединим столбцы таблицы AnimalTotal с командами, сопоставленными животным в таблицах Match и Commands в итоговую таблицу Total:
 
 create table Total as
 select
